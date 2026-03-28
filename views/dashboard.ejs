@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f0f2f5; }
+    .header { background: #4a90d9; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+    .header h1 { font-size: 20px; }
+    .header a { color: #fff; text-decoration: none; background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 4px; }
+    .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .welcome { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .welcome h2 { color: #333; margin-bottom: 15px; }
+    .info { color: #666; line-height: 1.8; }
+    .info strong { color: #333; }
+    .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #28a745; color: #fff; text-decoration: none; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Hệ thống quản lý</h1>
+    <a href="/logout">Đăng xuất</a>
+  </div>
+  <div class="container">
+    <div class="welcome">
+      <h2>Chào mừng, <%= user.username %>!</h2>
+      <div class="info">
+        <p><strong>Username:</strong> <%= user.username %></p>
+        <p><strong>Email:</strong> <%= user.email %></p>
+        <p>Bạn đã đăng nhập và đổi mật khẩu thành công.</p>
+      </div>
+      <a href="/change-password" class="btn">Đổi mật khẩu</a>
+    </div>
+  </div>
+</body>
+</html>

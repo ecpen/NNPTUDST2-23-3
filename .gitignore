@@ -3,6 +3,14 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Node.js
+node_modules/
+package-lock.json
+
+# Database & results (chứa password)
+users.db
+import_results.xlsx
+
 # User-specific files
 *.rsuser
 *.suo

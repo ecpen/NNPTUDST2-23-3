@@ -1,0 +1,31 @@
+{
+  "name": "nnptudst2-23-3",
+  "version": "1.0.0",
+  "description": "NGUYỄN VŨ TUẤN KIỆT-2280618886",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecpen/NNPTUDST2-23-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ecpen/NNPTUDST2-23-3/issues"
+  },
+  "homepage": "https://github.com/ecpen/NNPTUDST2-23-3#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.8.0",
+    "dotenv": "^17.3.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "nodemailer": "^8.0.4",
+    "xlsx": "^0.18.5"
+  }
+}
